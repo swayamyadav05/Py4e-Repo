@@ -9,13 +9,13 @@ try:
 except:
     print("Cannot find file:", fname)
     quit()
-nsum = 0.0
+total = 0.0
 count = 0
 for line in fh:
     if not line.startswith("X-DSPAM-Confidence:"):
         continue
     else:
-        nsum += float(line[20:])
+        total = total + float(line[20:])
         count += 1
     # print(line)
-print("Average spam confidence:", nsum/count)
+print("Average spam confidence:", total/count)
