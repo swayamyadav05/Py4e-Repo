@@ -7,15 +7,6 @@
 # print(lostr[::-1])
 
 num = int(input("enter a no. "))
-count = 0
-
-while (num>0):
-    num = num//10
-    count += 1
-print(count)
-
-
-num = int(input("enter a no. "))
 
 def armstrongg(num):
     count = 0
