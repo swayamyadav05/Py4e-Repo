@@ -1,6 +1,6 @@
 # Socket in python
 
-# Python has built-in suppoert for TCP Sockets
+# Python has built-in support for TCP Sockets
 
 import socket
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
