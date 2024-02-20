@@ -20,3 +20,4 @@ for line in hand:
     if re.search('^From: ', line):
         print (line)
     
+# We fine-tune what is matched by adding special characters to the string
