@@ -4,7 +4,7 @@
 # - A list can be sorted (i.e., change its order)
 # - The sort method (unlike strings) means "sort yourself"
 
-friends = ['Joseph', 'Glenn', 'Sally']
+friends = ["Joseph", "Glenn", "Sally"]
 friends.sort()
 print(friends)
 print(friends[1])
