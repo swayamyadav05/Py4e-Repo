@@ -21,7 +21,7 @@ data = urllib.request.urlopen(url, context=ctx).read()
 # print(data)
 print("Retrieved", len(data), "characters")
 root = ET.fromstring(data)
-# print(root)
+print(root)
 # print(root.tag)
 for element in root.iter("comment"):
     sum = sum + int(element.find("count").text)
