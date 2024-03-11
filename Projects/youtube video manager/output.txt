@@ -1,0 +1,99 @@
+python .\youtube_video_manager.py
+
+Youtube Video Manager
+1. List all youtube videos
+2. Add a youtube video
+3. Update a youtube video
+4. Delete a youtube video
+5. Exit the app
+Enter your choice: 1
+**********************************************************************
+1 chai aur python, Duration: 40 minutes
+2 chai aur java, Duration: 14 hours
+**********************************************************************
+
+Youtube Video Manager
+1. List all youtube videos
+2. Add a youtube video
+3. Update a youtube video
+4. Delete a youtube video
+5. Exit the app
+Enter your choice: 2
+Enter the name of the video: chai aur javascript
+Enter the duration of the video: 15 hours
+
+Youtube Video Manager
+1. List all youtube videos
+2. Add a youtube video
+3. Update a youtube video
+4. Delete a youtube video
+5. Exit the app
+Enter your choice: 1
+**********************************************************************
+1 chai aur python, Duration: 40 minutes
+2 chai aur java, Duration: 14 hours
+3 chai aur javascript, Duration: 15 hours
+**********************************************************************
+
+Youtube Video Manager
+1. List all youtube videos
+2. Add a youtube video
+3. Update a youtube video
+4. Delete a youtube video
+5. Exit the app
+Enter your choice: 3
+**********************************************************************
+1 chai aur python, Duration: 40 minutes
+2 chai aur java, Duration: 14 hours
+3 chai aur javascript, Duration: 15 hours
+**********************************************************************
+Enter the video number you want to update: 3
+Enter the new name of the video: chai aur javascript backend
+Enter the duration of the new video: 16 hours
+
+Youtube Video Manager
+1. List all youtube videos
+2. Add a youtube video
+3. Update a youtube video
+4. Delete a youtube video
+5. Exit the app
+Enter your choice: 1
+**********************************************************************
+1 chai aur python, Duration: 40 minutes
+2 chai aur java, Duration: 14 hours
+3 chai aur javascript backend, Duration: 16 hours
+**********************************************************************
+
+Youtube Video Manager
+1. List all youtube videos
+2. Add a youtube video
+3. Update a youtube video
+4. Delete a youtube video
+5. Exit the app
+Enter your choice: 4
+**********************************************************************
+1 chai aur python, Duration: 40 minutes
+2 chai aur java, Duration: 14 hours
+3 chai aur javascript backend, Duration: 16 hours
+**********************************************************************
+Enter the video number to be deleted: 1
+
+Youtube Video Manager
+1. List all youtube videos
+2. Add a youtube video
+3. Update a youtube video
+4. Delete a youtube video
+5. Exit the app
+Enter your choice: 1
+**********************************************************************
+1 chai aur java, Duration: 14 hours
+2 chai aur javascript backend, Duration: 16 hours
+**********************************************************************
+
+Youtube Video Manager
+1. List all youtube videos
+2. Add a youtube video
+3. Update a youtube video
+4. Delete a youtube video
+5. Exit the app
+Enter your choice: 5
