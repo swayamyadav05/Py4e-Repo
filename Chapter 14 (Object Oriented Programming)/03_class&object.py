@@ -16,3 +16,6 @@ an.party()
 an.party()
 an = 42
 print("an contains", an)
+
+
+# The constructor and destructor are optional. The constructor is typically used to set up variables. The destructor is seldom used.

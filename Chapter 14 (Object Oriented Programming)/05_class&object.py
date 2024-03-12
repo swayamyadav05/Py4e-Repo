@@ -28,3 +28,6 @@ s.party()
 j = FootballFan("Jim")
 j.party()
 j.touchdown()
+
+
+# FootballFan is a class which extends PartyAnimal. It has all the capabilities of PartyAnimal and more.
