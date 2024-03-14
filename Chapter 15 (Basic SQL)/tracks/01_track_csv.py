@@ -1,9 +1,8 @@
 import sqlite3
 
-conn = sqlite3.connect("trackdb.sqlite")
+conn = sqlite3.connect("tracks_db.sqlite")
 cur = conn.cursor()
 
-# Make some fresh tables using executescript()
 cur.executescript(
     """
 DROP TABLE IF EXISTS Artist;
@@ -31,15 +30,15 @@ CREATE TABLE Track (
 )
 
 
-handle = open("tracks.csv")
+fname = open("tracks.csv")
 
 # Another One Bites The Dust,Queen,Greatest Hits,55,100,217103
-#   0                          1      2           3  4   5
+# 0                            1          2       3  4    5
 
-for line in handle:
+for line in fname:
     line = line.strip()
     pieces = line.split(",")
-    if len(pieces) != 6:
+    if len(pieces) < 6:
         continue
 
     name = pieces[0]
@@ -52,25 +51,21 @@ for line in handle:
     print(name, artist, album, count, rating, length)
 
     cur.execute(
-        """INSERT OR IGNORE INTO Artist (name) 
-        VALUES ( ? )""",
+        """INSERT OR IGNORE INTO Artist (name) VALUES ( ? )""",
         (artist,),
     )
-    cur.execute("SELECT id FROM Artist WHERE name = ? ", (artist,))
+    cur.execute(""" SELECT id FROM Artist WHERE name = ? """, (artist,))
     artist_id = cur.fetchone()[0]
 
     cur.execute(
-        """INSERT OR IGNORE INTO Album (title, artist_id) 
-        VALUES ( ?, ? )""",
+        """INSERT OR IGNORE INTO Album (title, artist_id) VALUES ( ?, ? )""",
         (album, artist_id),
     )
-    cur.execute("SELECT id FROM Album WHERE title = ? ", (album,))
+    cur.execute(""" SELECT id FROM Album WHERE title = ? """, (album,))
     album_id = cur.fetchone()[0]
 
     cur.execute(
-        """INSERT OR REPLACE INTO Track
-        (title, album_id, len, rating, count) 
-        VALUES ( ?, ?, ?, ?, ? )""",
+        """INSERT OR REPLACE INTO Track (title, album_id, len, count, rating) VALUES ( ?, ?, ?, ?, ? )""",
         (name, album_id, length, rating, count),
     )
 
